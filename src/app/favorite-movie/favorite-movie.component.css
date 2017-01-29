@@ -1,0 +1,18 @@
+.example-card {
+  width: 200px;
+ border: 1px solid #ddd;
+}
+.posterImg{
+	height: 250px;
+}
+.example-header-image {
+ 
+  background-size: cover;
+}
+ul{
+	list-style: none;
+}
+li{
+	display: inline-flex;
+	margin-left: 8px;
+}

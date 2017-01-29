@@ -1,0 +1,23 @@
+
+<ul>  
+  <li *ngFor="let movie of FmovieData">
+    <md-card class="example-card">
+  <md-card-header>
+   
+    <md-card-title><strong>{{movie.original_title}}</strong></md-card-title>
+   
+  </md-card-header>
+  <img class="posterImg" md-card-image src="http://image.tmdb.org/t/p/w185{{movie.poster_path}}">
+  <md-card-content>
+    <p>
+    {{movie.tagline}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+ 
+    <button md-button md-raised-button  (click)="onSelect(movie.id)">Credits</button>
+  </md-card-actions>
+</md-card>
+  </li>
+<ul>
+<p [hidden]="!loader">Loading....</p>
