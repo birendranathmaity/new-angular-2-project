@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
+  selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['../darktheme.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+	isDarkTheme: boolean = false;
 }
