@@ -1,0 +1,20 @@
+<md-card class="example-card">
+<p>{{message}}</p>
+  <md-card-header>
+  <md-card-actions >
+    <button md-button md-raised-button color="accent" *ngIf="actionsBtn" (click)="onSelectHigh()">Higher</button>
+    <button md-button md-raised-button color="primary" *ngIf="actionsBtn" (click)="onSelectLow()">Lower</button>
+    <button md-button md-raised-button color="primary" *ngIf="!actionsBtn" (click)="onSelectTryAgain()">Try Again</button>
+  </md-card-actions>
+</md-card-header>
+  
+  <md-card-content>
+  <p [hidden]="!loader">Loading....</p>
+  <ul [hidden]="loader">
+  <li  *ngFor="let card of Dcards"><img  [src]="card.BlankCard"></li>
+   
+  </ul>
+ 
+  </md-card-content>
+ 
+</md-card>
