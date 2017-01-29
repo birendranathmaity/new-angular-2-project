@@ -1,0 +1,12 @@
+.castImg{
+	background-size: contain;
+	 background-repeat: no-repeat;
+	 
+}
+md-grid-tile-footer h3{
+	color: #fff;
+	text-align: center;
+}
+md-grid-tile-footer{
+	cursor: pointer;
+}

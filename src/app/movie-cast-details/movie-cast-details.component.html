@@ -1,0 +1,14 @@
+<md-grid-list cols="8" >
+  <md-grid-tile
+      *ngFor="let cast of casts.cast"
+
+      [style.background]="changePro(cast.profile_path)"
+      
+     class="castImg"
+      >
+
+<md-grid-tile-footer (click)="gotoThemoviedbProfile(cast.id)">
+        <h3>{{cast.name}}</h3>
+      </md-grid-tile-footer>
+  </md-grid-tile>
+</md-grid-list>
