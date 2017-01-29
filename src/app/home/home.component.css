@@ -1,1 +1,9 @@
-
+.posterImg{
+	height: 300px;
+	width: 200px;
+}
+md-card-title{
+	    position: absolute;
+    left: 0;
+    right: 0;
+}
