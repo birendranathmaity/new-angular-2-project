@@ -10,8 +10,6 @@ import { cardsInterface } from './cardsInterface';
   providers:[DeckcardsService]
 })
 export class CardGameComponent implements OnInit {
-public Fcard = false;
-public Scard = false;
 public actionsBtn=true;
 public loader=true;
 public lowCards = ["ACE",2,3,4,5,6,7];
