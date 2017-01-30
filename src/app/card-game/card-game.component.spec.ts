@@ -4,7 +4,7 @@ import { DebugElement }    from '@angular/core';
 
 import { CardGameComponent  } from './card-game.component';
 
-describe('CardGameComponent (inline template)', () => {
+describe('CardGameComponent', () => {
 
   let comp:    CardGameComponent;
   let fixture: ComponentFixture<CardGameComponent>;
