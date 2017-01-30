@@ -34,12 +34,12 @@ describe('DeckcardsService', () => {
 
   describe('startGame()', () => {
 
-    it('should return an Observable<Array<deck_id>>',
+    it('should return an Observable<Array<decks>>',
         inject([DeckcardsService, MockBackend], (DeckcardsService, mockBackend) => {
 
         const mockResponse = {
                      remaining: 25;
-                     deck_id: "fgfghf45hjjbnfj";
+                     deck_id: "3p40paa87x90";
                      shuffled:true;
                      success:true;
 }
@@ -51,11 +51,9 @@ describe('DeckcardsService', () => {
         });
 
         DeckcardsService.startGame().subscribe((decks) => {
-          expect(videos.length).toBe(4);
-          expect(videos[0].name).toEqual('Video 0');
-          expect(videos[1].name).toEqual('Video 1');
-          expect(videos[2].name).toEqual('Video 2');
-          expect(videos[3].name).toEqual('Video 3');
+        //  expect(decks.remaining).toEqual(20);
+          expect(decks.deck_id).toEqual('3p40paa87x90');
+         
         });
 
     }));
