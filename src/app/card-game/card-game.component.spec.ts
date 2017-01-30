@@ -2,21 +2,21 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By }              from '@angular/platform-browser';
 import { DebugElement }    from '@angular/core';
 
-import { BannerComponent } from './banner-inline.component';
+import { CardGameComponent  } from './card-game.component';
 
-describe('BannerComponent (inline template)', () => {
+describe('CardGameComponent (inline template)', () => {
 
-  let comp:    BannerComponent;
+  let comp:    CardGameComponent;
   let fixture: ComponentFixture<BannerComponent>;
   let de:      DebugElement;
   let el:      HTMLElement;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ BannerComponent ], // declare the test component
+      declarations: [ CardGameComponent ], // declare the test component
     });
 
-    fixture = TestBed.createComponent(BannerComponent);
+    fixture = TestBed.createComponent(CardGameComponent);
 
     comp = fixture.componentInstance; // BannerComponent test instance
 
