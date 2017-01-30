@@ -19,8 +19,9 @@ public highCards = [8,9,10,"JACK","QUEEN","KING"];
 public BlankCard = "/assets/icons/hideCard.png";
 public deck_id:string;
 public totalcurd:number;
-  constructor(private deckcardsService:DeckcardsService) { }
 Dcards=[];
+  constructor(private deckcardsService:DeckcardsService) { }
+
   ngOnInit() {
   	this.deckcardsService.startGame().then((decks:MyCustomDeckofApiType) => {
         
