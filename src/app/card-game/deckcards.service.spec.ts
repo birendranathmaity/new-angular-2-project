@@ -8,7 +8,7 @@ import {
 } from '@angular/http';
 import { MockBackend } from '@angular/http/testing';
 import {DeckcardsService} from './deckcards.service';
-//import { VIMEO_API_URL } from '../config';
+
 
 describe('DeckcardsService', () => {
 
@@ -17,7 +17,7 @@ describe('DeckcardsService', () => {
     TestBed.configureTestingModule({
       imports: [HttpModule],
       providers: [
-        { provide: VIMEO_API_URL, useValue: 'http://example.com' },
+       
         DeckcardsService,
         {
           provide: Http,
