@@ -7,7 +7,7 @@ import { CardGameComponent  } from './card-game.component';
 describe('CardGameComponent (inline template)', () => {
 
   let comp:    CardGameComponent;
-  let fixture: ComponentFixture<BannerComponent>;
+  let fixture: ComponentFixture<CardGameComponent>;
   let de:      DebugElement;
   let el:      HTMLElement;
 
@@ -18,7 +18,7 @@ describe('CardGameComponent (inline template)', () => {
 
     fixture = TestBed.createComponent(CardGameComponent);
 
-    comp = fixture.componentInstance; // BannerComponent test instance
+    comp = fixture.componentInstance; // CardGameComponent test instance
 
     // query for the title <h1> by CSS element selector
     de = fixture.debugElement.query(By.css('h1'));
