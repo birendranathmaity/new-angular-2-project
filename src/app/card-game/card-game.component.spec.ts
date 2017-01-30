@@ -20,23 +20,23 @@ describe('CardGameComponent', () => {
 
     comp = fixture.componentInstance; // CardGameComponent test instance
 
-    // query for the title <h1> by CSS element selector
+    // query for the message <h1> by CSS element selector
     de = fixture.debugElement.query(By.css('h1'));
     el = de.nativeElement;
   });
 
-  it('no title in the DOM until manually call `detectChanges`', () => {
+  it('no message in the DOM until manually call `detectChanges`', () => {
     expect(el.textContent).toEqual('');
   });
 
-  it('should display original title', () => {
+  it('should display original message', () => {
     fixture.detectChanges();
-    expect(el.textContent).toContain(comp.title);
+    expect(el.textContent).toContain(comp.message);
   });
 
-  it('should display a different test title', () => {
-    comp.title = 'Test Title';
+  it('should display a different test message', () => {
+    comp.message = 'this is berkedia unit test of card game';
     fixture.detectChanges();
-    expect(el.textContent).toContain('Test Title');
+    expect(el.textContent).toContain('this is berkedia unit test of card game');
   });
 });
