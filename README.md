@@ -1,4 +1,4 @@
-# Card Game(Higher/Lower) and Favorite Movies Gallary Using Angular 2.0
+# Card Game(Higher/Lower) and Favorite Movies Gallery Using Angular 2.0
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
 
